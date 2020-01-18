@@ -54,6 +54,16 @@ tests/hello.test.js
   return s.charAt(0).toUpperCase() + s.slice(1)
 
 
+---------------------
+
+mkdir weather
+npm init -y
+cp hello index / remove hello
+
+// darksky.net -> get api key
+// opencagedata.com -> get api key
+
+
 
 
 
