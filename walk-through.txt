@@ -1,0 +1,40 @@
+Hello World
+
+npm init -y
+touch index.js hello.js
+npm install commander
+--
+index.js
+  const program = require('commander')                                                          
+  program.option('-n, --name <string>', 'whats your name')                                      
+  program.parse(process.argv)
+  console.log(program.name)
+
+hello.js
+  const hello = (name) => name
+  exports.hello = hello
+
+mkdir tests
+touch tests/hello.test.js
+
+tests/hello.test.js
+  const { hello } = require('../hello')
+  const name = hello('joe') //mr anderson
+  console.log(name)
+
+index.js
+  if (!process.argv.slice(2).length) {                                                          
+    program.outputHelp()                                                                        
+    process.exit()                                                                              
+   }                                                                                             
+   console.log(hello(program.name))
+
+%> node index.js
+%> node index.js --name joe
+
+/// https://jestjs.io/
+
+npm install --save-dev jest
+npm run test
+
+
