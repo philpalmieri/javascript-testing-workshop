@@ -1,3 +1,3 @@
-const hello = (name) => name
+const hello = (name) => `hello, ${name}`
 
 exports.hello = hello
