@@ -37,4 +37,25 @@ index.js
 npm install --save-dev jest
 npm run test
 
+tests/hello.test.js
+describe('hello module', () => {                                                  
+  test('name returns with hello', () => {
+    const testName = 'joe'                                                        
+    const returnedName = hello(testName)                                          
+    expect(returnedName).toBe(returnedName)
+  })                                                                              
+})
+
+// make return 'hello joe'
+// make return 'hello, joe'
+// make return 'Hello, Joe!'
+
+tests/hello.test.js
+  return s.charAt(0).toUpperCase() + s.slice(1)
+
+
+
+
+
+
 
