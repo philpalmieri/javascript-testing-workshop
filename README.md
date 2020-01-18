@@ -8,13 +8,11 @@ Workshop: What, Why, and How on Writing tests in JavaScript for NodeJS | Project
 | 10:00 - 10:30 | Welcome / Intros / Sponsors? |
 | 10:30 - 10:45 | What is testing, vocabulary |
 | 10:45 - 11:00 | Why are we testing |
-| 11:00 - 11:30 | Hands on #1 / Hello World (everyone is up and running?) |
-| 11:30 - 12:00 | Lunch / Help with setup  (eat while we work) |
-| 12:00 - 13:15 | Hands on #2 / Coin Return App |
-| 13:15 - 13:30 | Break / Extra Help |
-| 13:30 - 14:00 | Demo: Hard to test code is a code smell |
-| 14:00 - 15:30 | Hands on #3 / Full Weather App w/Mocks |
-| 15:30 - 15:45 | Extra Time Buffer / Adding Travis / GH Auto Running / Badge |
+| 11:00 - 12:00 | Hands on #1 / Hello World (everyone is up and running?) |
+| 12:00 - 12:45 | Lunch / Help with setup  (eat while we work) |
+| 12:45 - 13:15 | Demo: Hard to test code is a code smell |
+| 13:15 - 15:15 | Hands on #3 / Full Weather App w/Mocks |
+| 15:15 - 15:45 | Extra Time Buffer / Adding Travis / GH Auto Running / Badge |
 | 15:45 - 16:00 | Closing / sponsor note? |
 | 16:00 - ??:?? | Grab drinks, additional help, tbd |
 
@@ -46,11 +44,6 @@ Workshop: What, Why, and How on Writing tests in JavaScript for NodeJS | Project
   - Add watcher
   - Change test to have comma
   - Reload
-- Coin return ( $1.00 - $.10 = $.25x3, $.10x1, $.05x1)
-  - Expected results test
-  - Run business rule suite with data provider
-  - invalid coin exception
-  - What about bills?
   - Handle Exceptions?
 - Weather
   - Address -> Zipcode -> weather
