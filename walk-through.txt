@@ -62,7 +62,8 @@ cp hello index / remove hello
 
 // darksky.net -> get api key
 // opencagedata.com -> get api key
-
+index.js
+  require('dotenv').config()
 
 
 
