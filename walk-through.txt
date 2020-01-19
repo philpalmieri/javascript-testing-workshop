@@ -61,7 +61,10 @@ npm init -y
 cp hello index / remove hello
 
 // darksky.net -> get api key
+// https://api.darksky.net/forecast/KEY/37.8267,-122.4233
 // opencagedata.com -> get api key
+// https://api.opencagedata.com/geocode/v1/json?key=KEY&q=Orlando,%20FL
+
 index.js
   require('dotenv').config()
 
@@ -73,6 +76,10 @@ package.json
 tests/setup.js
    console.log('Loading .env file for tests')                                                    
    require('dotenv').config({ path: '.env.test' })  
+
+npm install --save-dev nock
+//https://github.com/nock/nock#specifying-path
+
 
 
 
