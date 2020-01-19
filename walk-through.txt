@@ -65,8 +65,14 @@ cp hello index / remove hello
 index.js
   require('dotenv').config()
 
+package.json
+  "jest": {                                                                                    
+     "setupFiles": ["./tests/setup.js"]                                                          
+   }, 
 
-
+tests/setup.js
+   console.log('Loading .env file for tests')                                                    
+   require('dotenv').config({ path: '.env.test' })  
 
 
 
