@@ -8,13 +8,28 @@ describe('env config works', () => {
 })
 
 describe('location connection', () => {
-  test('city is sent', async () => {
-    nock(process.env.OPENCAGE_URL)
+  let openCage;
+  let openCageQuery = {
+    key: process.env.OPENCAGE_KEY
+  }
+  beforeEach( () => {
+    nock.disableNetConnect()
+    nock.enableNetConnect(/^(127\.0\.0\.1|localhost)/)
+    openCage = nock(process.env.OPENCAGE_URL)
       .get('/json')
-      .query({ key: process.env.OPENCAGE_KEY, q: 'Orlando' })
+  })
+
+  afterEach( () => {
+    nock.cleanAll()
+    nock.restore()
+  })
+
+  test('city is sent', async () => {
+    openCage.query({ ...openCageQuery, q: 'Orlando' })
       .reply(200, {hello: 'test'})
+
     const response = await getLocation('Orlando')
-    console.log(response)
-    expect(true).toBe(true)
+    responseObj = JSON.parse(response) 
+    expect(responseObj.hello).toBe('test')
   })
 })
