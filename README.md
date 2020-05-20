@@ -1,7 +1,7 @@
 # javascript-testing-workshop
 Workshop: What, Why, and How on Writing tests in JavaScript for NodeJS | Project Codex : Orlando Juniors
 
-
+https://docs.google.com/presentation/d/1q8AAqh9D3v-B1QnW3omUUiMRMc2gehwBnWLjAGAGMyM/edit?usp=sharing
 
 | TIME | |
 |---|---|
